@@ -30,8 +30,8 @@
       </div>
     </div>
     <div class="hospital-info-show">
-      <router-link to="/">
-        <Scroll :on-reach-bottom="handleReachBottom" height="600">
+      <Scroll :on-reach-bottom="handleReachBottom" height="600">
+        <router-link to="/hospitalinfo/1231">
           <Card
             :bordered="true"
             :padding="10"
@@ -39,16 +39,16 @@
             :key="index"
             :class="[index % 2 === 1 ? 'card-style-right' : 'card-style-left']"
           >
-            <p slot="title">{{ item.title }}</p>
+            <p slot="title">{{ item.htitle }}</p>
             <div class="cardnews clearfix">
               <div class="card-left">
                 <div class="grade">
                   <Icon type="ios-ribbon" size="16" />
-                  <p>{{ item.grade }}</p>
+                  <p>{{ item.hgrade }}</p>
                 </div>
                 <div class="time">
                   <Icon type="md-alarm" size="16" />
-                  <p>每天{{ item.time }}放号</p>
+                  <p>{{ item.htime }}</p>
                 </div>
               </div>
               <div class="card-right">
@@ -56,8 +56,8 @@
               </div>
             </div>
           </Card>
-        </Scroll>
-      </router-link>
+        </router-link>
+      </Scroll>
     </div>
   </div>
 </template>
@@ -67,284 +67,140 @@ export default {
   name: "HospitalSelection",
   data() {
     return {
-      gradeid: 0,
-      regionid: 0,
+      gradeid: "全部",
+      regionid: "全部",
       grades: [
         {
           title: "全部",
-          gradeid: 0
+          gradeid: "全部",
         },
         {
           title: "三级医院",
-          gradeid: 3
+          gradeid: "三",
         },
         {
           title: "二级医院",
-          gradeid: 2
+          gradeid: "二",
         },
         {
           title: "一级医院",
-          gradeid: 1
-        }
+          gradeid: "一",
+        },
       ],
       regions: [
         {
           title: "全部",
-          regionid: 0
+          regionid: "全部",
         },
         {
           title: "东城区",
-          regionid: 1
+          regionid: "东城区",
         },
         {
           title: "西城区",
-          regionid: 2
+          regionid: "西城区",
         },
         {
           title: "朝阳区",
-          regionid: 3
+          regionid: "朝阳区",
         },
         {
           title: "丰台区",
-          regionid: 4
+          regionid: "丰台区",
         },
         {
           title: "石景山区",
-          regionid: 5
+          regionid: "石景山区",
         },
         {
           title: "海淀区",
-          regionid: 6
+          regionid: "海淀区",
         },
         {
           title: "门头沟区",
-          regionid: 7
+          regionid: "门头沟区",
         },
         {
           title: "房山区",
-          regionid: 8
+          regionid: "房山区",
         },
         {
           title: "通州区",
-          regionid: 9
+          regionid: "通州区",
         },
         {
           title: "顺义区",
-          regionid: 10
+          regionid: "顺义区",
         },
         {
           title: "大兴区",
-          regionid: 11
+          regionid: "大兴区",
         },
         {
           title: "昌平区",
-          regionid: 12
+          regionid: "昌平区",
         },
         {
           title: "怀柔区",
-          regionid: 13
+          regionid: "怀柔区",
         },
         {
           title: "平谷区",
-          regionid: 14
+          regionid: "平谷区",
         },
         {
           title: "密云区",
-          regionid: 15
+          regionid: "密云区",
         },
         {
           title: "延庆区",
-          regioni: 16
-        }
+          regionid: "延庆区",
+        },
       ],
-      hospitalinfo: [
-        {
-          title: "北京协和医院",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23176337663806575.png")
-        },
-        {
-          title: "中国人民解放军总医院（301医院）",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23177271556061774.png")
-        },
-        {
-          title: "北京第一人民医院",
-          grade: "三级甲等",
-          time: "16:00",
-          himg: require("../static/23176618472499403.png")
-        },
-        {
-          title: "北京大学人民医院",
-          grade: "三级甲等",
-          time: "06:00",
-          himg: require("../static/23177084467557645.png")
-        },
-        {
-          title: "北京协和医院",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23176337663806575.png")
-        },
-        {
-          title: "中国人民解放军总医院（301医院）",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23177271556061774.png")
-        },
-        {
-          title: "北京第一人民医院",
-          grade: "三级甲等",
-          time: "16:00",
-          himg: require("../static/23176618472499403.png")
-        },
-        {
-          title: "北京大学人民医院",
-          grade: "三级甲等",
-          time: "06:00",
-          himg: require("../static/23177084467557645.png")
-        },
-        {
-          title: "北京协和医院",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23176337663806575.png")
-        },
-        {
-          title: "中国人民解放军总医院（301医院）",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23177271556061774.png")
-        },
-        {
-          title: "北京第一人民医院",
-          grade: "三级甲等",
-          time: "16:00",
-          himg: require("../static/23176618472499403.png")
-        },
-        {
-          title: "北京大学人民医院",
-          grade: "三级甲等",
-          time: "06:00",
-          himg: require("../static/23177084467557645.png")
-        },
-        {
-          title: "北京协和医院",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23176337663806575.png")
-        },
-        {
-          title: "中国人民解放军总医院（301医院）",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23177271556061774.png")
-        },
-        {
-          title: "北京第一人民医院",
-          grade: "三级甲等",
-          time: "16:00",
-          himg: require("../static/23176618472499403.png")
-        },
-        {
-          title: "北京大学人民医院",
-          grade: "三级甲等",
-          time: "06:00",
-          himg: require("../static/23177084467557645.png")
-        },
-        {
-          title: "北京协和医院",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23176337663806575.png")
-        },
-        {
-          title: "中国人民解放军总医院（301医院）",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23177271556061774.png")
-        },
-        {
-          title: "北京第一人民医院",
-          grade: "三级甲等",
-          time: "16:00",
-          himg: require("../static/23176618472499403.png")
-        },
-        {
-          title: "北京大学人民医院",
-          grade: "三级甲等",
-          time: "06:00",
-          himg: require("../static/23177084467557645.png")
-        },
-        {
-          title: "北京协和医院",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23176337663806575.png")
-        },
-        {
-          title: "中国人民解放军总医院（301医院）",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23177271556061774.png")
-        },
-        {
-          title: "北京第一人民医院",
-          grade: "三级甲等",
-          time: "16:00",
-          himg: require("../static/23176618472499403.png")
-        },
-        {
-          title: "北京大学人民医院",
-          grade: "三级甲等",
-          time: "06:00",
-          himg: require("../static/23177084467557645.png")
-        },
-        {
-          title: "北京协和医院",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23176337663806575.png")
-        },
-        {
-          title: "中国人民解放军总医院（301医院）",
-          grade: "三级甲等",
-          time: "8:30",
-          himg: require("../static/23177271556061774.png")
-        },
-        {
-          title: "北京第一人民医院",
-          grade: "三级甲等",
-          time: "16:00",
-          himg: require("../static/23176618472499403.png")
-        },
-        {
-          title: "北京大学人民医院",
-          grade: "三级甲等",
-          time: "06:00",
-          himg: require("../static/23177084467557645.png")
-        }
-      ],
+      hospitalinfo: [],
       hospitalnfolin: [],
-      text: ""
+      text: "",
     };
   },
   components: {},
-  mounted() {
-    this.getHospitalInfo();
+  created() {
+    this.getCovidClinicList();
   },
   methods: {
     gradesfind(data) {
       this.gradeid = data;
-      console.log(this.gradeid);
+      this.getCovidClinicList();
     },
     regionsfind(data) {
       this.regionid = data;
-      console.log(this.gradeid, this.regionid);
+      this.getCovidClinicList();
     },
-    getHospitalInfo() {
+    async getCovidClinicList() {
+      await this.$api
+        .getHospitalDetailInfo({
+          params: {
+            gradeid: this.gradeid,
+            regionid: this.regionid,
+          },
+        })
+        .then((res) => {
+          this.hospitalnfolin = [];
+          this.hospitalinfo = res.data;
+          let len;
+          if (this.hospitalinfo.length < 10) {
+            len = this.hospitalinfo.length;
+          } else {
+            len = 10;
+          }
+          for (let i = 0; i < len; i++) {
+            this.hospitalnfolin.push(this.hospitalinfo[i]);
+          }
+        });
+    },
+    async getHospitalInfo() {
+      await this.$api.getHospitalInfo().then((res) => {
+        this.hospitalinfo = res.data;
+      });
       let len;
       if (this.hospitalinfo.length < 10) {
         len = this.hospitalinfo.length;
@@ -356,15 +212,15 @@ export default {
       }
     },
     handleReachBottom() {
-      return new Promise(resolve => {
+      return new Promise((resolve) => {
         setTimeout(() => {
           let len = 10;
-           if (this.hospitalinfo.length === this.hospitalnfolin.length) {
+          if (this.hospitalinfo.length === this.hospitalnfolin.length) {
             this.$Message["error"]({
               background: true,
-              content: "已经没有数据了"
+              content: "已经没有数据了",
             });
-            console.log(1)
+            console.log(1);
           }
           let len1 = this.hospitalnfolin.length;
           if (this.hospitalinfo.length - len1 < 10) {
@@ -374,10 +230,10 @@ export default {
             this.hospitalnfolin.push(this.hospitalinfo[len1 + i]);
           }
           resolve();
-        }, 2000);
+        }, 500);
       });
-    }
-  }
+    },
+  },
 };
 </script>
 <style>

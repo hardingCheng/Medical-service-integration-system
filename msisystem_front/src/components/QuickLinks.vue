@@ -16,14 +16,12 @@
         />
         {{ items.title }}
       </p>
-      <a href="#" slot="extra">
+      <router-link slot="extra" :to="{name:items.mainulrinfo.url,params:{type:items.mainulrinfo.type,info:items.mainulrinfo.context}}">
         全部<Icon type="ios-arrow-forward" size="18" />
-      </a>
+      </router-link>
       <ul>
         <li v-for="(item, index) in items.data" :key="index">
-          <a :href="item.url" target="_blank">
-            {{ setNameInfo(item.name) }}
-          </a>
+          <router-link :to="item.url">{{ setNameInfo(item.name) }}</router-link>
         </li>
       </ul>
     </Card>
@@ -42,6 +40,11 @@ export default {
           type: {
             num: 0,
             icontype: ""
+          },
+          mainulrinfo:{
+            url:"nucleicacid",
+            type:'0',
+            context:"all"
           },
           data: [
             {
@@ -68,6 +71,11 @@ export default {
             num: 0,
             icontype: ""
           },
+          mainulrinfo:{
+            url:"departmentlist",
+            type:'0',
+            context:"all"
+          },
           data: [
             {
               name: "神经内科",
@@ -93,18 +101,23 @@ export default {
             num: 1,
             icontype: "md-volume-up"
           },
+          mainulrinfo:{
+            url:"platformbulletinlist",
+            type:'0',
+            context:"a"
+          },
           data: [
             {
               name: "北京市第一中西医结合医院东坝院区通知",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "/platformbulletin/3/105"
             },
             {
               name: "关于东直门医院号源暂停更新的通知",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "/platformbulletin/3/106"
             },
             {
               name: "关于北京市回民医院号源停挂并暂停更新的通",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "/platformbulletin/3/107"
             }
           ]
         },
@@ -114,18 +127,23 @@ export default {
             num: 1,
             icontype: "ios-clipboard"
           },
+          mainulrinfo:{
+            url:"platformbulletinlist",
+            type:'0',
+            context:"a"
+          },
           data: [
             {
               name: "北京德尔康尼骨科医院骨科停诊公告",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "/platformbulletin/3/105"
             },
             {
               name: "北京德尔康尼骨科医院运动医学停诊公告",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "/platformbulletin/3/105"
             },
             {
               name: "北京德尔康尼骨科医院关节外科停诊公告",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "/platformbulletin/3/105"
             }
           ]
         }
@@ -145,7 +163,7 @@ export default {
   computed: {}
 };
 </script>
-<style>
+<style scoped>
 .quick-links-card {
   margin-bottom: 20px;
 }

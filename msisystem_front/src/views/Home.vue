@@ -24,6 +24,9 @@ export default {
     Header,
     HospitalSelection,
     QuickLinks
+  },
+  mounted(){
+   
   }
 };
 </script>

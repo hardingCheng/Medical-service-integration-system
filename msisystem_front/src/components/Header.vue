@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="topnav">
-          <TopNav />
+       <TopNav />
     </div>
     <Carousels/>
     <Search/>
