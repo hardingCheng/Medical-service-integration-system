@@ -12,21 +12,42 @@
             v-for="(item, index) in deplist"
             :key="index"
           >
-          <a :href="'#dep_data_'+item.dep_type" @click="mod_li_bdcolor(item.dep_type)">
-            <li :class="[dep_type == item.dep_type ?'li_active':'']">{{ item.dep_name }}</li>
-          </a>
+            <a
+              :href="'#dep_data_' + item.dep_type"
+              @click="mod_li_bdcolor(item.dep_type)"
+            >
+              <li :class="[dep_type == item.dep_type ? 'li_active' : '']">
+                {{ item.dep_name }}
+              </li>
+            </a>
           </ul>
         </div>
         <div class="departmentlist-main-right">
-          <div class="departmentlist-main-right-tab" :class="[dep_type == items.dep_type ? 'departmentlist-main-right-tab_active' : '']" :id="'dep_data_'+items.dep_type" v-for="(items,index) in depdetaillist" :key="index">
+          <div
+            class="departmentlist-main-right-tab"
+            :class="[
+              dep_type == items.dep_type
+                ? 'departmentlist-main-right-tab_active'
+                : '',
+            ]"
+            :id="'dep_data_' + items.dep_type"
+            v-for="(items, index) in depdetaillist"
+            :key="index"
+          >
             <div class="departmentlist-main-right-top">
               <span>|</span>
-              {{items.dep_name}}
+              {{ items.dep_name }}
             </div>
             <div class="departmentlist-main-right-bottom">
               <Row type="flex">
-                <Col class="dep_detail_style" span="6" v-for="(item, index) in items.dep_detail">
-                <router-link to="nucleicacid"> {{item.dep_detail_title}}</router-link>
+                <Col
+                  class="dep_detail_style"
+                  span="6"
+                  v-for="(item, index) in items.dep_detail"
+                >
+                  <router-link to="nucleicacid">
+                    {{ item.dep_detail_title }}</router-link
+                  >
                 </Col>
               </Row>
             </div>
@@ -48,7 +69,7 @@ export default {
     return {
       deplist: [],
       depdetaillist: [],
-      dep_type:1
+      dep_type: 1,
     };
   },
   methods: {
@@ -60,12 +81,12 @@ export default {
     async getDepDetailList() {
       await this.$api.getDepDetailList().then((res) => {
         this.depdetaillist = res.data;
-        console.log(this.depdetaillist.length)
+        console.log(this.depdetaillist.length);
       });
     },
-    mod_li_bdcolor(data){
-      this.dep_type = data
-    }
+    mod_li_bdcolor(data) {
+      this.dep_type = data;
+    },
   },
   mounted() {
     this.getDepList(), this.getDepDetailList();
@@ -117,7 +138,7 @@ export default {
 }
 .departmentlist-main-right-top {
   padding: 20px;
-  font-weight:bold;
+  font-weight: bold;
   color: black;
 }
 .departmentlist-main-right-bottom {

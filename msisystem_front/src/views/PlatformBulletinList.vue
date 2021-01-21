@@ -5,10 +5,12 @@
       <h3 class="platformbulletin-main-title">平台公告</h3>
       <div class="platformbulletin-main-list">
         <div class="platformbulletin-main-list-item">
-            <router-link class="item-send-link"  to="platformbulletin/3/193">
-                <span class="item-send-title">北京市第一中西医结合医院东坝院区通知</span>
-                <span class="item-send-time">2020年09月29日</span>
-            </router-link>
+          <router-link class="item-send-link" to="platformbulletin/3/193">
+            <span class="item-send-title"
+              >北京市第一中西医结合医院东坝院区通知</span
+            >
+            <span class="item-send-time">2020年09月29日</span>
+          </router-link>
         </div>
       </div>
     </div>
@@ -38,21 +40,20 @@ export default {
   position: absolute;
   top: 100px;
 }
-.platformbulletin-main-list-item{
-    height: 45px;
-    width: 1000px;
+.platformbulletin-main-list-item {
+  height: 45px;
+  width: 1000px;
 }
-.platformbulletin-main-list-item a{
-    color: black;
+.platformbulletin-main-list-item a {
+  color: black;
 }
-.platformbulletin-main-list-item a:hover{
-    color: #4490f1;
+.platformbulletin-main-list-item a:hover {
+  color: #4490f1;
 }
 .platformbulletin-main-list-item .item-send-title {
-    float: left;
-
+  float: left;
 }
 .platformbulletin-main-list-item .item-send-time {
-    float: right;
+  float: right;
 }
 </style>

@@ -225,75 +225,75 @@ export default {
           disease: "再生障碍性贫血、贫血、白血病、嗜酸性",
         },
         {
-          name: "王书杰",		
+          name: "王书杰",
           title: "副主任医师",
           disease: "再生障碍性贫血、贫血、白血病、嗜酸性",
         },
         {
-          name: "韩冰",		
+          name: "韩冰",
           title: "副主任医师",
           disease: "白血病、血液病、再生障碍性贫血、淋巴",
         },
         {
-          name: "华宝来",		
+          name: "华宝来",
           title: "主治医师",
           disease: "血友病",
         },
         {
-          name: "赵永强",		
+          name: "赵永强",
           title: "主任医师",
           disease: "出血及血栓性疾病、危重病的出凝血异常",
         },
         {
-          name: "周道斌",		
+          name: "周道斌",
           title: "副主任医师",
           disease: "白血病",
         },
         {
-          name: "刘尔坤",		
+          name: "刘尔坤",
           title: "主任主任医师医师",
           disease: "慢性粒细胞白血病、红细胞增多症、阵发",
         },
         {
-          name: "焦力",		
+          name: "焦力",
           title: "主治医师",
           disease: "白血病",
         },
         {
-          name: "蔡华聪",				
+          name: "蔡华聪",
           title: "主治医师",
           disease: "再生障碍性贫血、血友病",
         },
         {
-          name: "朱铁楠",				
+          name: "朱铁楠",
           title: "主治医师",
           disease: "贫血、凝血功能障碍性疾病",
         },
         {
-          name: "单渊东",						
+          name: "单渊东",
           title: "主任医师",
           disease: "疑难血液病、白血病、恶性淋巴瘤、骨髓",
         },
         {
-          name: "武永吉",						
+          name: "武永吉",
           title: "主任医师",
           disease: "疑难血液病、多发性骨髓瘤、巨球蛋白血",
         },
         {
-          name: "邹农",						
+          name: "邹农",
           title: "主任医师",
           disease: "贫血",
         },
         {
-          name: "潘家绮",								
+          name: "潘家绮",
           title: "主任医师",
           disease: "出血及血栓性疾病、血友病的替代性治疗",
         },
         {
-          name: "陈苗",								
+          name: "陈苗",
           title: "主治医师",
           disease: "常见血液系统疾病",
-        }
+        },
       ],
       valueDisabled: 3,
     };
@@ -357,4 +357,4 @@ export default {
   float: left;
   margin-right: 60px;
 }
-</style>ß
+</style>

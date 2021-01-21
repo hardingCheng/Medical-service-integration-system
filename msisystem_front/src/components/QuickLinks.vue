@@ -2,7 +2,7 @@
   <div class="quick-links">
     <Card
       class="quick-links-card"
-      style="width:240px"
+      style="width: 240px"
       :padding="10"
       v-for="(items, index) in quicklinks"
       :key="index"
@@ -16,7 +16,16 @@
         />
         {{ items.title }}
       </p>
-      <router-link slot="extra" :to="{name:items.mainulrinfo.url,params:{type:items.mainulrinfo.type,info:items.mainulrinfo.context}}">
+      <router-link
+        slot="extra"
+        :to="{
+          name: items.mainulrinfo.url,
+          params: {
+            type: items.mainulrinfo.type,
+            info: items.mainulrinfo.context,
+          },
+        }"
+      >
         全部<Icon type="ios-arrow-forward" size="18" />
       </router-link>
       <ul>
@@ -39,115 +48,115 @@ export default {
           title: "核酸检测",
           type: {
             num: 0,
-            icontype: ""
+            icontype: "",
           },
-          mainulrinfo:{
-            url:"nucleicacid",
-            type:'0',
-            context:"all"
+          mainulrinfo: {
+            url: "nucleicacid",
+            type: "0",
+            context: "all",
           },
           data: [
             {
               name: "北京大学人民医院",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "https://movie.douban.com/subject/1292052/",
             },
             {
-              name: "北京大学第三医院",
-              url: "https://movie.douban.com/subject/1292052/"
+              name: "北京大学人民医院",
+              url: "https://movie.douban.com/subject/1292052/",
             },
             {
-              name: "民航总医院",
-              url: "https://movie.douban.com/subject/1292052/"
+              name: "北京大学人民医院",
+              url: "https://movie.douban.com/subject/1292052/",
             },
             {
-              name: "北京市顺义医院",
-              url: "https://movie.douban.com/subject/1292052/"
-            }
-          ]
+              name: "北京大学人民医院",
+              url: "https://movie.douban.com/subject/1292052/",
+            },
+          ],
         },
         {
           title: "常见科室",
           type: {
             num: 0,
-            icontype: ""
+            icontype: "",
           },
-          mainulrinfo:{
-            url:"departmentlist",
-            type:'0',
-            context:"all"
+          mainulrinfo: {
+            url: "departmentlist",
+            type: "0",
+            context: "all",
           },
           data: [
             {
               name: "神经内科",
-              url: "https://movie.douban.com/subject/1292052/"
+              url: "https://movie.douban.com/subject/1292052/",
             },
             {
-              name: "呼吸内科",
-              url: "https://movie.douban.com/subject/1292052/"
+              name: "神经内科",
+              url: "https://movie.douban.com/subject/1292052/",
             },
             {
-              name: "神经外科",
-              url: "https://movie.douban.com/subject/1292052/"
+              name: "神经内科",
+              url: "https://movie.douban.com/subject/1292052/",
             },
             {
-              name: "产科",
-              url: "https://movie.douban.com/subject/1292052/"
-            }
-          ]
+              name: "神经内科",
+              url: "https://movie.douban.com/subject/1292052/",
+            },
+          ],
         },
         {
           title: "平台公告",
           type: {
             num: 1,
-            icontype: "md-volume-up"
+            icontype: "md-volume-up",
           },
-          mainulrinfo:{
-            url:"platformbulletinlist",
-            type:'0',
-            context:"a"
+          mainulrinfo: {
+            url: "platformbulletinlist",
+            type: "0",
+            context: "a",
           },
           data: [
             {
               name: "北京市第一中西医结合医院东坝院区通知",
-              url: "/platformbulletin/3/105"
+              url: "/platformbulletin/3/105",
             },
             {
-              name: "关于东直门医院号源暂停更新的通知",
-              url: "/platformbulletin/3/106"
+              name: "北京市第一中西医结合医院东坝院区通知",
+              url: "/platformbulletin/3/106",
             },
             {
-              name: "关于北京市回民医院号源停挂并暂停更新的通",
-              url: "/platformbulletin/3/107"
-            }
-          ]
+              name: "北京市第一中西医结合医院东坝院区通知",
+              url: "/platformbulletin/3/107",
+            },
+          ],
         },
         {
           title: "停诊公告",
           type: {
             num: 1,
-            icontype: "ios-clipboard"
+            icontype: "ios-clipboard",
           },
-          mainulrinfo:{
-            url:"platformbulletinlist",
-            type:'0',
-            context:"a"
+          mainulrinfo: {
+            url: "platformbulletinlist",
+            type: "0",
+            context: "a",
           },
           data: [
             {
               name: "北京德尔康尼骨科医院骨科停诊公告",
-              url: "/platformbulletin/3/105"
+              url: "/platformbulletin/3/105",
             },
             {
-              name: "北京德尔康尼骨科医院运动医学停诊公告",
-              url: "/platformbulletin/3/105"
+              name: "北京德尔康尼骨科医院骨科停诊公告",
+              url: "/platformbulletin/3/105",
             },
             {
-              name: "北京德尔康尼骨科医院关节外科停诊公告",
-              url: "/platformbulletin/3/105"
-            }
-          ]
-        }
-      ]
+              name: "北京德尔康尼骨科医院骨科停诊公告",
+              url: "/platformbulletin/3/105",
+            },
+          ],
+        },
+      ],
     };
   },
   methods: {
@@ -157,10 +166,10 @@ export default {
       } else {
         return data;
       }
-    }
+    },
   },
   mounted() {},
-  computed: {}
+  computed: {},
 };
 </script>
 <style scoped>

@@ -16,27 +16,32 @@
       </div>
     </div>
     <div class="hospital-info-show">
-        <Scroll :on-reach-bottom="handleReachBottom" height="600">
-          <Card
-            :bordered="true"
-            :padding="0"
-            v-for="(item, index) in hospitalnfolin"
-            :key="index"
-            class="card-style"
-          >
-            <p slot="title">{{ item.htitle }}</p>
-            <div class="cardnews clearfix">
-              <div class="card-style-left">
-                  <div class="outpatient" >
-                    <Alert style="padding:8px 0px 8px 0px" v-for="(iteminfo,index) in item.hclinicstr_covid" :key="index">{{iteminfo}}</Alert>
-                  </div>
-              </div>
-              <div class="card-style-right">
-                <img :src="item.himg" alt="" />
+      <Scroll :on-reach-bottom="handleReachBottom" height="600">
+        <Card
+          :bordered="true"
+          :padding="0"
+          v-for="(item, index) in hospitalnfolin"
+          :key="index"
+          class="card-style"
+        >
+          <p slot="title">{{ item.htitle }}</p>
+          <div class="cardnews clearfix">
+            <div class="card-style-left">
+              <div class="outpatient">
+                <Alert
+                  style="padding: 8px 0px 8px 0px"
+                  v-for="(iteminfo, index) in item.hclinicstr_covid"
+                  :key="index"
+                  >{{ iteminfo }}</Alert
+                >
               </div>
             </div>
-          </Card>
-        </Scroll>
+            <div class="card-style-right">
+              <img :src="item.himg" alt="" />
+            </div>
+          </div>
+        </Card>
+      </Scroll>
     </div>
   </div>
 </template>
@@ -46,7 +51,7 @@ export default {
   name: "HospitalSelection",
   data() {
     return {
-      regionid: '全部',
+      regionid: "全部",
       regions: [
         {
           title: "全部",
@@ -117,7 +122,7 @@ export default {
           regionid: "延庆区",
         },
       ],
-      hospitalinfo:[],
+      hospitalinfo: [],
       hospitalnfolin: [],
       text: "",
     };
@@ -130,9 +135,9 @@ export default {
     regionsfind(data) {
       this.regionid = data;
       console.log(this.gradeid, this.regionid);
-      this.getCovidCinicList()
+      this.getCovidCinicList();
     },
-    async getCovidCinicList(){
+    async getCovidCinicList() {
       await this.$api
         .getCovidClinicList({
           params: {
@@ -140,7 +145,7 @@ export default {
           },
         })
         .then((res) => {
-          this.hospitalnfolin = []
+          this.hospitalnfolin = [];
           this.hospitalinfo = res.data;
           this.getHospitalInfo();
         });
@@ -222,7 +227,7 @@ export default {
   position: relative;
 }
 .card-style {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .card-style-left {
   float: left;
@@ -246,8 +251,8 @@ export default {
   margin-top: 30px;
   margin-left: 5px;
 }
-.card-style-left .outpatient .ivu-alert-info{
-    float: left;
-    margin-right: 20px;
+.card-style-left .outpatient .ivu-alert-info {
+  float: left;
+  margin-right: 20px;
 }
 </style>

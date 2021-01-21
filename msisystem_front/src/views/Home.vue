@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    <Header/>
+    <Header />
     <div class="w">
       <div class="home-main">
         <div class="home-main-left">
-          <HospitalSelection/>
+          <HospitalSelection />
         </div>
         <div class="home-main-right">
-          <QuickLinks/>
+          <QuickLinks />
         </div>
       </div>
     </div>
@@ -15,19 +15,17 @@
 </template>
 
 <script>
-import Header from '../components/Header'
-import HospitalSelection from '../components/HospitalSelection'
-import QuickLinks from '../components/QuickLinks'
+import Header from "../components/Header";
+import HospitalSelection from "../components/HospitalSelection";
+import QuickLinks from "../components/QuickLinks";
 export default {
   name: "Home",
   components: {
     Header,
     HospitalSelection,
-    QuickLinks
+    QuickLinks,
   },
-  mounted(){
-   
-  }
+  mounted() {},
 };
 </script>
 <style>

@@ -20,26 +20,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bde69327-836e-4f4d-b83e-44e9bf539cb4" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msisystem_back/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisystem_back/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/msisystem_back/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisystem_back/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/msisystem_back/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/msisystem_back/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/api/api/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/api/api/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/api/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/api/api/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/Carousels.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/Carousels.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/HInfo/HDetailInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/HInfo/HDetailInfo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/InformationList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/InformationList.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/QuickLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/QuickLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/QuickLinksSelect.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/QuickLinksSelect.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/Search.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msisystem_front/src/components/TopNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/components/TopNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msisystem_front/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/static/5f9a75b60001c5a318720764.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/static/5f9a77000001d52818720764.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/static/5f9aa4610001352a18720764.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/static/5f9aa4ef0001866718720764.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/static/5f9aa51e0001983718720764.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/utils/http.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/utils/http.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/DepartmentList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/DepartmentList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/HInfo/HospitalDepartmentInformation.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/HInfo/HospitalDepartmentInformation.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/HInfo/HospitalProfile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/HInfo/HospitalProfile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/HelpCenter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/HelpCenter.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/HospitalInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/HospitalInfo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../msisystem_front/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/NucleicAcid.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/NucleicAcid.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/PlatformBulletin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/PlatformBulletin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/PlatformBulletinList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/PlatformBulletinList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../msisystem_front/src/views/SearchInfo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../msisystem_front/src/views/SearchInfo.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,10 +86,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.buildTools.grunt.grunt-cli.package" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -136,6 +144,15 @@
       <workItem from="1604583919258" duration="1168000" />
       <workItem from="1604619599479" duration="4723000" />
       <workItem from="1604709235087" duration="2276000" />
+      <workItem from="1604896919698" duration="235000" />
+      <workItem from="1604985235345" duration="10000" />
+      <workItem from="1604985266892" duration="585000" />
+      <workItem from="1604990261013" duration="616000" />
+      <workItem from="1604998077125" duration="45000" />
+      <workItem from="1604998373744" duration="556000" />
+      <workItem from="1605074082828" duration="368000" />
+      <workItem from="1609400647530" duration="306000" />
+      <workItem from="1609401013981" duration="22000" />
     </task>
     <servers />
   </component>
@@ -153,47 +170,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="360" y="222" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604499985937">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="360" y="222" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604499985937" />
-    <state x="719" y="360" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604491852826">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="719" y="360" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1604491852826" />
-    <state width="1748" height="343" key="GridCell.Tab.0.bottom" timestamp="1604753120987">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1748" height="343" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1604753120987" />
-    <state width="1748" height="313" key="GridCell.Tab.0.bottom/0.23.1792.1025@0.23.1792.1025" timestamp="1604507406168" />
-    <state width="1876" height="313" key="GridCell.Tab.0.bottom/1792.-52.1920.1080/0.0.1792.1120@1792.-52.1920.1080" timestamp="1604656884473" />
-    <state width="1748" height="343" key="GridCell.Tab.0.center" timestamp="1604753120987">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1748" height="343" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1604753120987" />
-    <state width="1748" height="313" key="GridCell.Tab.0.center/0.23.1792.1025@0.23.1792.1025" timestamp="1604507406167" />
-    <state width="1876" height="313" key="GridCell.Tab.0.center/1792.-52.1920.1080/0.0.1792.1120@1792.-52.1920.1080" timestamp="1604656884472" />
-    <state width="1748" height="343" key="GridCell.Tab.0.left" timestamp="1604753120986">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1748" height="343" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1604753120986" />
-    <state width="1748" height="313" key="GridCell.Tab.0.left/0.23.1792.1025@0.23.1792.1025" timestamp="1604507406167" />
-    <state width="1876" height="313" key="GridCell.Tab.0.left/1792.-52.1920.1080/0.0.1792.1120@1792.-52.1920.1080" timestamp="1604656884471" />
-    <state width="1748" height="343" key="GridCell.Tab.0.right" timestamp="1604753120987">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state width="1748" height="343" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1604753120987" />
-    <state width="1748" height="313" key="GridCell.Tab.0.right/0.23.1792.1025@0.23.1792.1025" timestamp="1604507406167" />
-    <state width="1876" height="313" key="GridCell.Tab.0.right/1792.-52.1920.1080/0.0.1792.1120@1792.-52.1920.1080" timestamp="1604656884472" />
-    <state x="435" y="199" key="SettingsEditor" timestamp="1604492556203">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="435" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1604492556203" />
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1604628359521">
-      <screen x="0" y="0" width="1792" height="1120" />
-    </state>
-    <state x="561" y="251" width="670" height="676" key="search.everywhere.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1604628359521" />
   </component>
 </project>

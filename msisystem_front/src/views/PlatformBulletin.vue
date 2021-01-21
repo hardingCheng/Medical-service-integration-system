@@ -7,16 +7,16 @@
         <div class="bullein-main-title">
           <h1>北京市第一中西医结合医院东坝院区通知</h1>
         </div>
-        <hr/>
+        <hr />
         <div class="bullein-main-context">
-        <p>
-        因医院系统升级改造，北京市第一中西医结合医院东坝院区11月1日以后的号源暂时停挂，并停止更新号源。预计于十月底恢复正常，给您带来的不便敬请谅解。
-        </p>
+          <p>
+            因医院系统升级改造，北京市第一中西医结合医院东坝院区11月1日以后的号源暂时停挂，并停止更新号源。预计于十月底恢复正常，给您带来的不便敬请谅解。
+          </p>
         </div>
-       <div class="right-bottom-context">
-         <p>医疗服务集成系统</p>
-         <p>2020-11-06</p>
-       </div>
+        <div class="right-bottom-context">
+          <p>医疗服务集成系统</p>
+          <p>2020-11-06</p>
+        </div>
       </div>
     </div>
   </div>

@@ -1,16 +1,16 @@
 // Asiox封装
 import axios from "axios";
 import qs from "querystring";
-import router from '../router/index'
+import router from "../router/index";
 //在main.js已经被实例化了，句不需要了
 // const router = VueRouter()
 
 //跳转登录页面
 const toLogin = () => {
-    router.push({
-        path:'/login'
-    })
-}
+  router.push({
+    path: "/login"
+  });
+};
 
 //处理错误信息
 const errorHandle = (status, other) => {
@@ -20,7 +20,7 @@ const errorHandle = (status, other) => {
       break;
     case 401:
       //求登录
-      toLogin()
+      toLogin();
       console.log("认证失败");
       break;
     case 406:
@@ -30,10 +30,9 @@ const errorHandle = (status, other) => {
     case 403:
       console.log("客户端请求失败");
       break;
-    default :
+    default:
       console.log(other);
       break;
-      
   }
 };
 
@@ -47,7 +46,8 @@ var instance = axios.create({
 //instance.defaults.baseURL = "http://127.0.0.1:8001";
 //这里设置了，请求拦截就不需要了。
 //instance.defaults.headers.common["Authorization"] = "AUTH_TOKEN"; //token
-instance.defaults.headers.post["Content-Type"] ="application/x-www-form-urlencoded";
+instance.defaults.headers.post["Content-Type"] =
+  "application/x-www-form-urlencoded";
 
 // 添加请求拦截器
 instance.interceptors.request.use(

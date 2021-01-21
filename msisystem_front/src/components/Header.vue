@@ -1,33 +1,32 @@
 <template>
   <div>
     <div class="topnav">
-       <TopNav />
+      <TopNav />
     </div>
-    <Carousels/>
-    <Search/>
+    <Carousels />
+    <Search />
   </div>
 </template>
 
 <script>
-import TopNav from '../components/TopNav'
-import Carousels from '../components/Carousels'
-import Search from '../components/Search'
+import TopNav from "../components/TopNav";
+import Carousels from "../components/Carousels";
+import Search from "../components/Search";
 export default {
   name: "Header",
   props: {
-    msg: String
+    msg: String,
   },
   components: {
     TopNav,
     Carousels,
-    Search
-  }
+    Search,
+  },
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .topnav {
-  
 }
 </style>

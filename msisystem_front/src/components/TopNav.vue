@@ -3,10 +3,10 @@
     <div class="w">
       <div class="top-nav-logo">
         <router-link to="/">
-           <div class="top-nav-left">
-          <img src="../static/cnulog.png" alt="" />
-          <p class="top-nav-title">医疗服务集成系统</p>
-        </div>
+          <div class="top-nav-left">
+            <img src="../static/cnulog.png" alt="" />
+            <p class="top-nav-title">医疗服务信息平台</p>
+          </div>
         </router-link>
         <div class="top-nav-right">
           <router-link to="helpcenter">帮助中心</router-link>
@@ -21,8 +21,8 @@
 export default {
   name: "TopNav",
   props: {
-    msg: String
-  }
+    msg: String,
+  },
 };
 </script>
 
@@ -65,14 +65,14 @@ top-nav-left {
   text-align: center;
 }
 .top-nav-right a {
-    margin-left: 20px;
-    font-size: 15px;
-    color: #999;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #999;
 }
 .top-nav-right a:nth-child(2) {
-    color: black;
+  color: black;
 }
 .top-nav-right a:hover {
-    color:#99CCFF
+  color: #99ccff;
 }
 </style>
